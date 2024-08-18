@@ -109,3 +109,12 @@ To run server tests:
    - Reason: Simplifies development and allows for a more interactive user experience.
    - Trade-off: Potential SEO limitations and longer initial load times compared to server-side rendering.
 
+## Future Improvements
+
+1. Implement caching to reduce redundant metadata fetches.
+2. Add user authentication for personalized experiences.
+3. Improve error handling with more detailed user feedback.
+4. Implement server-side rendering for better SEO and initial load performance.
+5. Add more comprehensive test coverage, including frontend tests.
+6. Implement a more robust metadata extraction system to handle a wider variety of websites.
+
