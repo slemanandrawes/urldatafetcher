@@ -38,24 +38,24 @@ URL Metadata Fetcher is a full-stack application that allows users to input mult
    cd urldatafetcher
 
 2. Install server dependencies:
-   cd server
-   npm install
+   2.1 cd server
+   2.2 npm install
 
 3. Install client dependencies:
-   cd ../client
-   npm install
+   3.1 cd ../client
+   3.2 npm install
 
 ## Running the Application
 
 1. Start the server:
-   cd server
-   npm start
+   1.1 cd server
+   1.2 npm start
 
 The server will run on `http://localhost:5000`
 
 2. In a new terminal, start the client:
-   cd client
-   npm start
+   2.1 cd client
+   2.2 npm start
 
 The client will run on `http://localhost:3000`
 
@@ -71,9 +71,9 @@ The client will run on `http://localhost:3000`
 ## Running Tests
 
 To run server tests:
-  cd server
-  npm install --save-dev jest-environment-node
-  npm test
+  1.cd server
+  2.npm install --save-dev jest-environment-node
+  3.npm test
 
 
 
