@@ -1,0 +1,13 @@
+{
+  "name": "url-metadata-fetcher",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node server/src/server.js",
+    "heroku-postbuild": "cd server && npm install && cd ../client && npm install && npm run build",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "cacheDirectories": ["server/node_modules", "client/node_modules"]
+}
