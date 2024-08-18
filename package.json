@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server/src/server.js",
     "heroku-postbuild": "cd server && npm install && cd ../client && npm install && npm run build",
-    "test": "cd server && npm test && cd ../client && npm test"
+    "test": "cd project-root/server && npm test && cd ../client && npm test"
   },
   "cacheDirectories": ["server/node_modules", "client/node_modules"]
 }
