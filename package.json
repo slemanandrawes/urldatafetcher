@@ -5,7 +5,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server/src/server.js",
+    "start": "node client/public/index.html",
     "heroku-postbuild": "cd project-root/server && npm install && cd ../client && npm install && npm run build",
     "test": "cd project-root/server && npm test && cd ../client && npm test"
   },
