@@ -1,4 +1,3 @@
-
 #This is an example webapp.io configuration for React!
 FROM vm/ubuntu:18.04
 
