@@ -72,11 +72,11 @@ The client will run on `http://localhost:3000`
 
 To run server tests:
 
-  -cd server
+  - cd server
   
-  -npm install --save-dev jest-environment-node
+  - npm install --save-dev jest-environment-node
   
-  -npm test
+  - npm test
 
 
 
