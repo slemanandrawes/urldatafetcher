@@ -2,7 +2,7 @@
   "name": "url-metadata-fetcher",
   "version": "1.0.0",
   "engines": {
-    "node": "20.x"
+    "node": "20"
   },
   "scripts": {
     "start": "node client/src/App.js",
