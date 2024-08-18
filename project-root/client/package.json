@@ -30,6 +30,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "proxy": "https://urldatafetcher-954ee211f2a1.herokuapp.com/"
+    }
 }
