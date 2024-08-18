@@ -4,7 +4,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const { fetchMetadata } = require('./metadataFetcher');
-
+const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -70,7 +70,7 @@ app.post('/api/fetch-metadata', async (req, res) => {
     res.status(500).json({ error: 'An error occurred while fetching metadata.' });
   }
 });
-
+app.use(express.static(path.join(__dirname + "project-root/client/build")))
 // Start server
 if (process.env.NODE_ENV !== 'test') {
   app.listen(PORT, () => {
