@@ -35,7 +35,7 @@ URL Metadata Fetcher is a full-stack application that allows users to input mult
 
 1. Clone the repository:
    git clone https://github.com/slemanandrawes/urldatafetcher.git
-   cd urldatafetcher
+   - cd urldatafetcher
 
 2. Install server dependencies:
    2.1 cd server
