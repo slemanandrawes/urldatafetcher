@@ -20,15 +20,6 @@ const apiLimiter = rateLimit({
   message: { error: 'Too many requests, please try again later.' } // Response message
 });
 app.use('/api/', apiLimiter);
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/public')));
-
-// Your API routes go here
-
-// For any request that doesn't match the above, send back React's index.html file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/index.html'));
-});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
@@ -70,7 +61,7 @@ app.post('/api/fetch-metadata', async (req, res) => {
     res.status(500).json({ error: 'An error occurred while fetching metadata.' });
   }
 });
-app.use(express.static(path.join(__dirname + "project-root/client/build")))
+app.use(express.static(path.join(__dirname + "../client/build")))
 // Start server
 if (process.env.NODE_ENV !== 'test') {
   app.listen(PORT, () => {
