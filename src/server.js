@@ -61,7 +61,7 @@ app.post('/api/fetch-metadata', async (req, res) => {
     res.status(500).json({ error: 'An error occurred while fetching metadata.' });
   }
 });
-app.use(express.static(path.join(__dirname + "client/build")))
+app.use(express.static(path.join(__dirname + "./client/build")))
 // Start server
 if (process.env.NODE_ENV !== 'test') {
   app.listen(PORT, () => {
