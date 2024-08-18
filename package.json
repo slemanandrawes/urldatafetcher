@@ -2,10 +2,10 @@
   "name": "url-metadata-fetcher",
   "version": "1.0.0",
   "engines": {
-    "node": "20"
+    "node": "20.x"
   },
   "scripts": {
-    "start": "node client/src/App.js",
+    "start": "node server/src/server.js",
     "heroku-postbuild": "cd project-root/server && npm install && cd ../client && npm install && npm run build",
     "test": "cd project-root/server && npm test && cd ../client && npm test"
   },
